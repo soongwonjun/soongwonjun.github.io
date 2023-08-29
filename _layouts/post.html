@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<article class="post">
+  <header class="post-header">
+    {% if page.categories.size > 0 %}
+      <div class="post-meta">
+        <!-- <ul class="post-categories">
+          {%- for category in page.categories -%}
+            <li>
+              {% assign slugified_category = category | slugify %}
+              {%- if site.categories_path -%}
+                <a class="post-category" href="{{ site.categories_path | relative_url }}#{{ slugified_category }}">{{ category }}</a>
+              {%- else -%}
+                <span class="post-category">{{ category }}</span>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        </ul> -->
+      </div>
+    {% endif %}
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {{ page.date | date_to_string }} created.
+      </time>
+      {%- if page.last_modified_at -%}
+        <span> </span>
+        {%- assign mdate = page.last_modified_at | date_to_xmlschema -%}
+        <time datetime="{{ mdate }}" itemprop="dateModified">
+          {{ mdate | date_to_string }} updated.
+        </time>
+      {%- endif -%}
+      {%- if page.author -%}
+        <span> • </span>
+        {% for author in page.author %}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            {{ author }}
+          </span>
+          {%- if forloop.last == false %}, {% endif -%}
+        {% endfor %}
+      {%- endif -%}
+      {%- if page.description -%}
+          <h2 class="post-description"> {{ page.description }} </h2>
+      {%- endif -%}
+      {%- if page.summary -%}
+          <span class="post-summary"> {{ page.summary }} </span>
+      {%- endif -%}
+    </div>
+  </header>
+  
+  <div class="post-content">
+  {{ content | toc}}
+  </div>
+
+  {% if page.tags.size > 0 %}
+    <div class="post-meta">
+      <i class="post-tags-icon fas fa-tag"></i>
+      <ul class="post-tags">
+        {%- for tag in page.tags -%}
+          <li>
+            <a class="post-tag" href="/pages/tags/#{{ tag }}">{{ tag }}</a>
+          </li>
+        {%- endfor -%}
+      </ul>
+    </div>
+  {% endif %}
+  
+  {% if site.comment.disqus and page.comments != false %}
+    {% include disqus.html %}
+  {% endif %}
+
+  {% if site.comment.utterance and page.comments != false %}
+    {% include utterance.html %}
+  {% endif %}
+</article>

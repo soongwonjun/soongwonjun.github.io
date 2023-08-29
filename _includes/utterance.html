@@ -1,0 +1,30 @@
+<div class="utterance-comment-area">
+</div>
+
+<script>
+  let commentDom = document.getElementsByClassName('utterance-comment-area')[0];
+  let theme = 'light';
+
+  if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    theme = 'dark';
+  }
+  
+  const scriptElem = document.createElement('script');
+  scriptElem.src = 'https://utteranc.es/client.js';
+  scriptElem.crossOrigin = 'anonymous';
+  scriptElem.setAttribute('repo', 'soongwonjun/soongwonjun.github.io');
+  scriptElem.setAttribute('issue-term', 'pathname');
+  scriptElem.setAttribute('label', 'blog-comments');
+  scriptElem.setAttribute('theme', `github-${theme}`);
+  commentDom.appendChild(scriptElem);
+  
+  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
+    let message = {
+      type: 'set-theme',
+      theme: event.matches ? 'github-dark' : 'github-light'
+    };
+    const iframe = commentDom.getElementsByClassName('utterances-frame')[0];
+    iframe.contentWindow.postMessage(message, 'https://utteranc.es');
+  });
+
+</script>
