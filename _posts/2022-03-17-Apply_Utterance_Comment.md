@@ -91,6 +91,6 @@ utterances의 comment는 처음 dom이 만들어질 때, 그리고 내가 commen
 
 이 블로그에서는, 코멘트 반영 내용이 계속 유지되길 바라는 마음에 첫 번째 소개한 방식대로 구현하였다.
 
-## Appendix & References
+## Reference & References
 
 - [utterance: issue/549](https://github.com/utterance/utterances/issues/549)

@@ -18,6 +18,6 @@ authguard와 passportstrategy는 같이 쓰이게 되며, 여기에서 guard.can
 
 - passport의 authGuard는 canActivate 시 context validation을 위한 strategy를 생성하는데 이 strategy가 생성 될 때 callback으로 항상 validation을 실행할 수 있도록 한다.
 
-## References & Appendix
+## References & Reference
 
 [Manual: Guards](https://docs.nestjs.com/guards)

@@ -138,6 +138,6 @@ Generic의 목적은 코드의 가독성을 올리고, 코드의 타입을 강�
 Generic은 객체의 외부에서 객체 내부의 타입을 결정지을 수 있는 강력한 기능히다. 내부의 자료구조를 외부에서 결정지을 수 있기 때문이다. 때문에 우리는 사용하는 쪽에서 가장 적절한 객체를 사용하여야 한다.  
 물론 primitive type을 사용하면 모든 객체를 받을 수 있으니 좋겠지만, 이는 2가지 문제로 사용할 수 없다. Java 컴파일 엔진에서 허용을 하지 않으며, 허용한다 한들 코드의 가독성을 낮추고 버그 포인트를 만드는 과정이 될 뿐이다. 때문에 Generic을 사용하는 쪽에서 어떻게 사용할 것인지를 항상 고민해야 한다.
 
-## Appendix & References
+## Reference & References
 
 - [Oracle Java Doc, Generic](https://docs.oracle.com/javase/tutorial/extra/generics/index.html)

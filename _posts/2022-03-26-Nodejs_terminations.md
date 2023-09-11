@@ -89,7 +89,7 @@ process.on('uncaughtException', (err) => {
 });
 ```
 
-## Appendix & References
+## Reference & References
 
 - [geeksforgeeks: nodejs lifecycle](https://www.geeksforgeeks.org/nodejs-program-lifecycle/)
 - [nodejs.dev: How to exit from a Node.js program](https://nodejs.dev/learn/how-to-exit-from-a-nodejs-program)

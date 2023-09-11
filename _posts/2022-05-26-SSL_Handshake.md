@@ -22,6 +22,6 @@ description: ""
   8. server는 client로 finished 를 보내어 SSL handshake가 끝났음을 알린다. 이로서 client와 server간의 SSL/TLS session이 맺어지게 된다.
   9. 이제부터 server와 client는 SSL/TLS session 내에서 암호화된 데이터를 교환한다. SSL/TLS session 내의 데이터는 암호화되어 있어, packet snippet과 같은 작업을 하여도 실제 데이터를 볼 수 없는 상태가 된다.
 
-## Appendix & References
+## Reference & References
 
 - [SSL Handshake](https://www.ibm.com/docs/en/ibm-mq/7.5?topic=ssl-overview-tls-handshake)

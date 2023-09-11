@@ -43,6 +43,6 @@ For help, see: https://nodejs.org/en/docs/inspector
 이제 실행중인 앱에 대해서 프로파일링도 가능하고, 코드 단위 디버깅까지 진행할 수 있는 환경이 되었다.
 ![Chrome_inspect_app](/images/20220318/chrome_inspect_app.png)
 
-## Appendix & References
+## Reference & References
 
 [NodeJS: Debugging](https://nodejs.org/en/docs/guides/debugging-getting-started/)

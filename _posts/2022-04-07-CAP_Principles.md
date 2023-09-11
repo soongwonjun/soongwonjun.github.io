@@ -71,7 +71,7 @@ CP는 주 역할을 맡는 primary node와 primary node의 replicas인 secondary
 예를 들어 MongoDB에서 다수의 secondary node replicas는 서로 heartbeat로 상황을 주고받을 수 있으며, primary node에서 secondary node로의 replication을 진행하여 데이터의 일관성을 유지한다. 또한, primary node가 접속 불가능한 상황일 때에는 secondary node가 primary node 역할을 처리한다. 이로서 mongodb는 높은 가용성을 제공한다.
 ![Mongodb_replicas](/images/20220407/mongodb.png#center)
 
-## Appendix
+## Reference
 
 - [Wiki, Shard](https://en.wikipedia.org/wiki/Shard_(database_architecture))
 - [Wiki, Partitioning](https://en.wikipedia.org/wiki/Partition_(database))

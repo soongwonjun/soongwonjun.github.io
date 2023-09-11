@@ -70,7 +70,7 @@ export class AjvValidationPipe implements PipeTransform {
 )
 ```
 
-## Appendix
+## Reference
 
 - [Joi](https://github.com/hapijs/joi#readme)
 - [Ajv](https://ajv.js.org/)

@@ -124,7 +124,7 @@ Error: Failed to load parser '@typescript-eslint/parser' declared in '.eslintrc.
 
 ```
 
-## Appendix & References
+## Reference & References
 
 - [ESLint Getting Start](https://eslint.org/docs/user-guide/getting-started)
 - [ESLint Rules](https://eslint.org/docs/rules/)

@@ -94,7 +94,7 @@ NAME                                AGE    SIGNERNAME                     REQUES
 kubeadm-cert-kube-apiserver-rxlmd   2m9s   kubernetes.io/legacy-unknown   kubernetes-admin   Approved,Issued
 ```
 
-## Appendix & Reference
+## Reference & Reference
 
 [Kubernetes, kubeadm-cert](https://kubernetes.io/ko/docs/tasks/administer-cluster/kubeadm/kubeadm-certs/)
 

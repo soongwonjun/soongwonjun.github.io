@@ -108,7 +108,7 @@ export class FooService {
 }
 ```
 
-## Appendix
+## Reference
 
 - [Typescript Decorator](https://www.typescriptlang.org/docs/handbook/decorators.html)
 - [NestJs Decorator](https://docs.nestjs.com/custom-decorators)

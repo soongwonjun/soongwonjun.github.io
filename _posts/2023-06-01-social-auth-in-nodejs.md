@@ -100,7 +100,7 @@ export class SocialAuthKakaoService extends SocialAuthService {
 }
 ```
 
-## Appendix
+## Reference
 
 - [Apple API](https://developer.apple.com/documentation/sign_in_with_apple/generate_and_validate_tokens)
 - [Google API](https://developers.google.com/identity/sign-in/web/backend-auth?hl=ko)

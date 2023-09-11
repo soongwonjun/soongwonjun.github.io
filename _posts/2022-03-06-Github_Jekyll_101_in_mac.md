@@ -132,7 +132,7 @@ make: *** [rubyeventmachine.bundle] Error 1
 $ gem install eventmachine -- --with-openssl-dir=/usr/local/opt/openssl@1.1
 ```
 
-## Appendix
+## Reference
 
 - Jekyll & github blog
   - [jekyll](https://jekyllrb-ko.github.io)
