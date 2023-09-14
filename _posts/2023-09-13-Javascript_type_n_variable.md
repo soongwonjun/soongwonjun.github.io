@@ -2,6 +2,7 @@
 layout: post
 title:  Javascript와 type에 대해서
 date:  2023-09-13 22:00:00 +0900
+last_modified_at: 2023-09-14 14:00:00 +0900
 categories: cs
 tags: cs article
 ---
@@ -20,7 +21,7 @@ tags: cs article
 
 ECMAScript는 Javascript와 같은 스크립트 언어의 표준화를 위해 만들어진 문서이다. 기본적으로 이 언어는 객체 기반이며 ECMAScript는 객체간의 커뮤니케이션의 모음이다. ECMAScript에서 Object는  attribute를 가진 0개 이상의 property의 모음이다. 또한 property는 다른 객체, primitive value, function을 가질 수 있다.  
 
-### ECMAScript가 집중하는 부분
+### ECMAScript가 집중하는 부분, 그리고 variable에 type이 없는 이유
 
 ECMAScript 문법은 상당히 사용하기 쉬운 스크립트 언어라는데 초점을 맞추고 있다. 변수는 타입을 정의할 필요가 없으며, property는 type 연결되지 않으며(value와 연결된다) 정의된 함수는 호출되기 전까지 그 내용이 표현될 필요가 없다는 부분이다.  
 
