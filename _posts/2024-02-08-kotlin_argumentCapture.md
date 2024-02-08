@@ -24,12 +24,14 @@ class TestClass {
 ```
 
 간단한 테스트 함수를 작성해 보았다. value와 calculator를 인자로 받아서, calculator를 통해 value를 계산하는 함수이다.  
-이제 이 함수에 대한 테스트 코드를 넣어본다.
+이제 이 함수에 대한 테스트 코드를 넣어본다.  
 
 ```kotlin
 class CaptureTest {
     @Test
     fun `capture test`() {
+        // 캡쳐를 하기 위한 대상을 모킹한다.
+        // 원래 테스트코드에서는 모킹한 대상을 직접 호출하는건 의미가 없지만, 여기서는 설명을 위해 중간 단계를 모두 건너뛰어 본다.
         val t = mockk<TestClass>()
 
         // calculator에 들어가는 함수를 확인하기 위해서 slot을 만들고 capture를 사용하여 argument를 확인한다.
