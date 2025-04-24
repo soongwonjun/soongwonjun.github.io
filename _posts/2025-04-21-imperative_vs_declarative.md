@@ -81,5 +81,5 @@ sumAll([1,2,3,4,5])
 # 프로그램 패러다임에 대한 토막글
 
 [함수형 vs 객체지향형](/cs/2022/03/14/FP_vs_OOP.html)  
-[명령형 vs 선언형](/cs/2025/04/20/imperative_vs_declarative.html)  
-[동기 vs 비동기 vs 반응형](/cs/2025/04/20/synchronous_vs_asynchronous.html)
+[명령형 vs 선언형](/cs/2025/04/19/imperative_vs_declarative.html)  
+[동기 vs 비동기 vs 반응형](/cs/2025/04/19/synchronous_vs_asynchronous.html)
